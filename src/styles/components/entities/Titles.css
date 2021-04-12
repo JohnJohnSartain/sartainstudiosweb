@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+.text-effect {
+    color: #fff6a9;
+    font-family: 'Ubuntu', cursive;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px auto 0;
+    position: relative;
+    animation: animate 5s ease-in-out infinite;
+}
+
+.entitiesSections {
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 72px;
+    margin: 0 0 24px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fcfcfc;
+}
+
+.dark-green {
+    text-shadow: 0 0 5px darkgreen, 0 0 15px darkgreen, 0 0 20px darkgreen, 0 0 40px darkgreen, 0 0 60px darkgreen, 0 0 10px darkgreen, 0 0 98px darkgreen;
+    animation: animate-green-yellow 3s ease-in-out infinite;
+}
+
+@keyframes animate-green-yellow {
+    20%, 24%, 55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        color: greenyellow;
+    }
+}
+
+.dark-blue {
+    text-shadow: 0 0 5px darkblue, 0 0 15px darkblue, 0 0 20px darkblue, 0 0 40px darkblue, 0 0 60px darkblue, 0 0 10px darkblue, 0 0 98px darkblue;
+    animation: animate-deep-sky-blue 3s ease-in-out infinite;
+}
+
+@keyframes animate-deep-sky-blue {
+    20%, 24%, 55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        color: deepskyblue;
+    }
+}
+
+.light-blue {
+    text-shadow: 0 0 5px lightblue, 0 0 15px lightblue, 0 0 20px lightblue, 0 0 40px lightblue, 0 0 60px lightblue, 0 0 10px lightblue, 0 0 98px lightblue;
+    animation: animate-deep-sky-blue 3s ease-in-out infinite;
+}
+
+/* header font per device */
+@keyframes animate-deep-sky-blue {
+    20%, 24%, 55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        color: deepskyblue;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .text-effect, .entitiesSections {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .text-effect, .entitiesSections {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .text-effect, .entitiesSections {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .text-effect, .entitiesSections {
+        font-size: 44px;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+    .text-effect, .entitiesSections {
+        font-size: 35px;
+    }
+}

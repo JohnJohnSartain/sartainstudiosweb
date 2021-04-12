@@ -1,0 +1,143 @@
+/* icons*/
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+.everything {
+    user-select: none;
+    cursor: default;
+}
+
+.body {
+    padding: 0px 15px;
+}
+
+.basics {
+    background-color: #15202e;
+}
+
+.scaled-font {
+    font-size: 62.5%;
+}
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+.server {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px -4px;
+}
+
+.server-icon {
+    display: inline-block;
+    font-size: 2.5rem;
+}
+
+.server-details {
+    flex: 1;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.server-details li {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #7e8794;
+}
+
+.server-details .data {
+    font-weight: 600;
+    text-align: end !important;
+
+    color: #c1c6cb;
+}
+
+.server-details .grayed .data {
+    font-weight: normal;
+    color: rgba(230, 245, 255, 0.32);
+}
+
+.grayed {
+    font-weight: normal;
+    color: rgba(230, 245, 255, 0.32);
+}
+
+.server-details .signal {
+    color: #2eb35a;
+}
+
+.server-details .signal::before {
+    content: '';
+    display: inline-block;
+    width: .6rem;
+    height: .6rem;
+    background-color: currentColor;
+    border-radius: 50%;
+    margin-right: .5rem;
+    margin-top: -.2rem;
+    vertical-align: middle;
+}
+
+.server.has-failed {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-color: #d22c32;
+    animation: alertblink 2s ease-in-out infinite;
+}
+
+.server.has-failed .server-icon,
+.server.has-failed .signal {
+    color: #d22c32;
+}
+
+.server.has-failed:hover {
+    background-color: rgba(210, 44, 50, 0.2);
+    animation: none;
+}
+
+@keyframes alertblink {
+    0% {
+        background: rgba(210, 44, 50, 0);
+    }
+    50% {
+        background: rgba(210, 44, 50, 0.2);
+    }
+    100% {
+        background: rgba(210, 44, 50, 0);
+    }
+}
+
+.server-element-list {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .server-element-list {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .extra-small-mobile-font {
+        font-size: 500px;
+    }
+
+    .scaled-font {
+        font-size: 60%;
+    }
+
+    .server-icon {
+        display: inline-block;
+        font-size: 1.9rem;
+    }
+}

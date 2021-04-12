@@ -1,0 +1,56 @@
+div.status-indicator-success {
+    color: #333;
+    font-size: 22px;
+    padding: 0 20px 10px 30px;
+    position: relative;
+}
+
+div.status-indicator-failure {
+    color: #333;
+    font-size: 22px;
+    padding: 0 20px 10px 30px;
+    position: relative;
+}
+
+div.status-indicator-success:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #3ae73d;
+    box-shadow: 0 0 0 5px rgba(69, 231, 116, 0.4);
+}
+
+div.status-indicator-failure:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #e74c3c;
+    box-shadow: 0 0 0 5px rgba(231, 76, 60, 0.4);
+}
+
+div.status-indicator-success.urgent:before {
+    animation: blinking 1500ms infinite;
+}
+
+div.status-indicator-failure.urgent:before {
+    animation: blinking 1500ms infinite;
+}
+
+@keyframes blinking {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
