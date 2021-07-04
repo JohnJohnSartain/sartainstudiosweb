@@ -1,8 +1,8 @@
 let apiStrings = [{
-    'name': 'UsersApi',
-    'development': 'https://localhost:44302',
-    'test': 'https://usersapitest.sartainstudios.com',
-    'production': 'https://usersapi.sartainstudios.com'
+    'name': 'SartainStudiosApi',
+    'development': 'https://localhost:44318',
+    'test': 'https://apitest.sartainstudios.com',
+    'production': 'https://api.sartainstudios.com'
 }];
 
 export default apiStrings;

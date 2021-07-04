@@ -16,7 +16,7 @@ const UserCount = () => {
             setError: setUserQuantityError,
             setLoaded: setUserQuantityLoaded
         };
-        getData("UsersApi", `/User/Count`, httpRequestInformationSetters);
+        getData("SartainStudiosApi", `/User/Count`, httpRequestInformationSetters);
     }
 
     const getUserQuantityFormatted = (userQuantity) => {
