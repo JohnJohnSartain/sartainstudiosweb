@@ -1,6 +1,6 @@
 # Sartain Studios
 
-Sartain Studios show all related entities to Sartain Studios as well as site status and links.
+Sartain Studios show all related entities to Sartain Studios as well as entity status and links.
 
 ## Endpoints
 

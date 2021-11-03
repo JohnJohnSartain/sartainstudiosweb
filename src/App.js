@@ -1,8 +1,9 @@
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import routes from "./assets/routes/routes";
+import routes from "./Assets/Routes/Routes";
 import React from "react";
 
-const App = () => (
+// eslint-disable-next-line import/no-anonymous-default-export
+export default () =>
     <Router basename={process.env.PUBLIC_URL || ""}>
         <div>
             <Switch>
@@ -28,6 +29,3 @@ const App = () => (
             </Switch>
         </div>
     </Router>
-);
-
-export default App;
